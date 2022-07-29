@@ -20,6 +20,7 @@ public class ConfigurationReader
 
         config["ThreadGroupConfig:ConfigA:Users"].ShouldBe("1");
         config["ThreadGroupConfig:ConfigB:Users"].ShouldBe("1");
+        config["ThreadGroupConfig:ConfigC:Users"].ShouldBe("5");
     }
 
     [Test]
@@ -35,7 +36,7 @@ public class ConfigurationReader
     /// <summary>
     /// TODO: Implement Logging in this scenario, and test it.
     /// </summary>
-    [Test]
+    [Test]      
     public void HandleMissingSubConfigs()
     {
         var reader = new NGrossConfigReader();
@@ -43,25 +44,3 @@ public class ConfigurationReader
     }
 }
 
-public class NGrossConfigReader : INGrossConfigReader
-{
-    public IConfigurationRoot Read(string path)
-    {
-        var builder = new ConfigurationBuilder();
-        builder.AddJsonFile(path);
-        var rootConfig = builder.Build();
-        ReadSubConfigs(builder, rootConfig);
-        return builder.Build();
-    }
-
-    private static void ReadSubConfigs(IConfigurationBuilder builder, IConfiguration config)
-    {
-            foreach (var configsEntry in config.GetSection("Configs")
-                         .GetChildren()
-                         .AsEnumerable())
-            {
-                if (File.Exists(configsEntry.Value!))
-                    builder.AddJsonFile(configsEntry.Value!);
-            }
-    }
-}

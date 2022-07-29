@@ -5,11 +5,51 @@
     <projectFile>NGross.Core/NGross.Core.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b649692b-6e54-4566-977a-9c55286590fb" name="Changes" comment="" />
+    <list default="true" id="b649692b-6e54-4566-977a-9c55286590fb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NGross.Core/Config/Reader/NGrossConfigReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NGross/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NGross/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core.Test/Configuration/Reader/ConfigurationReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core.Test/Configuration/Reader/ConfigurationReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core.Test/Plans/UserTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core.Test/Plans/UserTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core.Test/bin/Debug/net6.0/NGross.Core.Test.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core.Test/bin/Debug/net6.0/NGross.Core.Test.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core.Test/bin/Debug/net6.0/NGross.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core.Test/bin/Debug/net6.0/NGross.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core.Test/bin/Debug/net6.0/NGross.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core.Test/bin/Debug/net6.0/NGross.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core.Test/bin/Debug/net6.0/mock-assembly.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core.Test/bin/Debug/net6.0/mock-assembly.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core.Test/bin/Debug/net6.0/mock-assembly.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core.Test/bin/Debug/net6.0/mock-assembly.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core.Test/bin/Debug/net6.0/ngross_config_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core.Test/bin/Debug/net6.0/ngross_config_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core.Test/obj/Debug/net6.0/NGross.Core.Test.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core.Test/obj/Debug/net6.0/NGross.Core.Test.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core.Test/obj/Debug/net6.0/NGross.Core.Test.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core.Test/obj/Debug/net6.0/NGross.Core.Test.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core.Test/obj/Debug/net6.0/NGross.Core.Test.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core.Test/obj/Debug/net6.0/NGross.Core.Test.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core.Test/obj/Debug/net6.0/ref/NGross.Core.Test.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core.Test/obj/Debug/net6.0/ref/NGross.Core.Test.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core.Test/obj/Debug/net6.0/refint/NGross.Core.Test.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core.Test/obj/Debug/net6.0/refint/NGross.Core.Test.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core/Plan/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core/Plan/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core/bin/Debug/NGross.Core.0.0.1.nupkg" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core/bin/Debug/NGross.Core.0.0.1.nupkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core/bin/Debug/net6.0/NGross.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core/bin/Debug/net6.0/NGross.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core/bin/Debug/net6.0/NGross.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core/bin/Debug/net6.0/NGross.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core/obj/Debug/net6.0/NGross.Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core/obj/Debug/net6.0/NGross.Core.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core/obj/Debug/net6.0/NGross.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core/obj/Debug/net6.0/NGross.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core/obj/Debug/net6.0/NGross.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core/obj/Debug/net6.0/NGross.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core/obj/Debug/net6.0/ref/NGross.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core/obj/Debug/net6.0/ref/NGross.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGross.Core/obj/Debug/net6.0/refint/NGross.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NGross.Core/obj/Debug/net6.0/refint/NGross.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-assembly/bin/Debug/net6.0/NGross.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/mock-assembly/bin/Debug/net6.0/NGross.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-assembly/bin/Debug/net6.0/NGross.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/mock-assembly/bin/Debug/net6.0/NGross.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-assembly/bin/Debug/net6.0/mock-assembly.dll" beforeDir="false" afterPath="$PROJECT_DIR$/mock-assembly/bin/Debug/net6.0/mock-assembly.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-assembly/bin/Debug/net6.0/mock-assembly.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/mock-assembly/bin/Debug/net6.0/mock-assembly.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-assembly/bin/Debug/net6.0/ngross_config_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/mock-assembly/bin/Debug/net6.0/ngross_config_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-assembly/mock-assembly.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/mock-assembly/mock-assembly.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-assembly/ngross_config_2.json" beforeDir="false" afterPath="$PROJECT_DIR$/mock-assembly/ngross_config_2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-assembly/obj/Debug/net6.0/mock-assembly.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/mock-assembly/obj/Debug/net6.0/mock-assembly.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-assembly/obj/Debug/net6.0/mock-assembly.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock-assembly/obj/Debug/net6.0/mock-assembly.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-assembly/obj/Debug/net6.0/mock-assembly.dll" beforeDir="false" afterPath="$PROJECT_DIR$/mock-assembly/obj/Debug/net6.0/mock-assembly.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mock-assembly/obj/Debug/net6.0/mock-assembly.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/mock-assembly/obj/Debug/net6.0/mock-assembly.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
@@ -30,6 +70,7 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="29OCqspSQntIPin4TSvZJnk4XYQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -99,13 +140,26 @@
       <workItem from="1653828736352" duration="7458000" />
       <workItem from="1653943056411" duration="3591000" />
       <workItem from="1654440134637" duration="984000" />
+      <workItem from="1659070997430" duration="3564000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -119,17 +173,17 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/NGross.Core.Test/Configuration/Reader/ConfigurationReader.cs</url>
-          <line>57</line>
-          <properties documentPath="C:\Users\rober\RiderProjects\NGross\NGross.Core.Test\Configuration\Reader\ConfigurationReader.cs" initialLine="58" containingFunctionPresentation="method 'ReadSubConfigs'">
+          <url>file://$PROJECT_DIR$/NGross.Core/Config/Reader/NGrossConfigReader.cs</url>
+          <line>16</line>
+          <properties documentPath="C:\Users\rober\RiderProjects\NGross\NGross.Core\Config\Reader\NGrossConfigReader.cs" initialLine="10" containingFunctionPresentation="method 'Read'">
             <startOffsets>
-              <option value="1466" />
+              <option value="608" />
             </startOffsets>
             <endOffsets>
-              <option value="1762" />
+              <option value="635" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

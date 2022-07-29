@@ -26,6 +26,6 @@ public class UserTest
             ThreadGroups = groups
         };
         
-        user.ExecuteActions();
+        user.RunThreadGroup();
     }
 }

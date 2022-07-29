@@ -9,7 +9,7 @@ namespace NGross.Core.Plan;
 public class User : IUser
 {
     public IEnumerable<IThreadGroup> ThreadGroups { get; set; }
-    public void ExecuteActions()
+    public void RunThreadGroup()
     {
         foreach (var threadAction in ThreadGroups)
         {
@@ -30,5 +30,5 @@ public interface IUser
 {
     public IEnumerable<IThreadGroup> ThreadGroups { get; set; }
 
-    void ExecuteActions();
+    void RunThreadGroup();
 }

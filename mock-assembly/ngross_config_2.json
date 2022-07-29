@@ -6,5 +6,6 @@
             "Loop": 1,
             "ErrorBehaviour": "Continue"
         }
-    }
+    },
+    "Configs": ["ngross_config_3.json"]
 }
