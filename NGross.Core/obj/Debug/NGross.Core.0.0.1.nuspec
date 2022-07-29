@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NGross.Core</id>
+    <version>0.0.1</version>
+    <authors>Robert Gaskin</authors>
+    <description>Core Framework for NGross</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="JetBrains.Annotations" version="2022.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="7.0.0-preview.4.22229.4" exclude="Build,Analyzers" />
+        <dependency id="System.Configuration.ConfigurationManager" version="5.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\rober\RiderProjects\NGross\NGross.Core\bin\Debug\net6.0\NGross.Core.dll" target="lib\net6.0\NGross.Core.dll" />
+  </files>
+</package>

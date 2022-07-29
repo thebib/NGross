@@ -1,0 +1,12 @@
+C:\Users\rober\RiderProjects\NGross\NGross.Core\bin\Debug\net6.0\NGross.Core.deps.json
+C:\Users\rober\RiderProjects\NGross\NGross.Core\bin\Debug\net6.0\NGross.Core.dll
+C:\Users\rober\RiderProjects\NGross\NGross.Core\bin\Debug\net6.0\NGross.Core.pdb
+C:\Users\rober\RiderProjects\NGross\NGross.Core\obj\Debug\net6.0\NGross.Core.csproj.AssemblyReference.cache
+C:\Users\rober\RiderProjects\NGross\NGross.Core\obj\Debug\net6.0\NGross.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rober\RiderProjects\NGross\NGross.Core\obj\Debug\net6.0\NGross.Core.AssemblyInfoInputs.cache
+C:\Users\rober\RiderProjects\NGross\NGross.Core\obj\Debug\net6.0\NGross.Core.AssemblyInfo.cs
+C:\Users\rober\RiderProjects\NGross\NGross.Core\obj\Debug\net6.0\NGross.Core.csproj.CoreCompileInputs.cache
+C:\Users\rober\RiderProjects\NGross\NGross.Core\obj\Debug\net6.0\NGross.Core.dll
+C:\Users\rober\RiderProjects\NGross\NGross.Core\obj\Debug\net6.0\ref\NGross.Core.dll
+C:\Users\rober\RiderProjects\NGross\NGross.Core\obj\Debug\net6.0\NGross.Core.pdb
+C:\Users\rober\RiderProjects\NGross\NGross.Core\obj\Debug\net6.0\refint\NGross.Core.dll

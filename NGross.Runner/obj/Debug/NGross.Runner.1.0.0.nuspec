@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NGross.Runner</id>
+    <version>1.0.0</version>
+    <authors>Robert Gaskin</authors>
+    <description>Executable to run an NGross Project.</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="NGross.Core" version="0.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\rober\RiderProjects\NGross\NGross.Runner\bin\Debug\net6.0\NGross.Runner.runtimeconfig.json" target="lib\net6.0\NGross.Runner.runtimeconfig.json" />
+    <file src="C:\Users\rober\RiderProjects\NGross\NGross.Runner\bin\Debug\net6.0\NGross.Runner.dll" target="lib\net6.0\NGross.Runner.dll" />
+  </files>
+</package>
