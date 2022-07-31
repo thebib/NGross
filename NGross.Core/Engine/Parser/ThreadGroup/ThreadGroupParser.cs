@@ -7,7 +7,7 @@ namespace NGross.Core.Engine.Parser.ThreadGroup;
 
 public class ThreadGroupParser : IThreadGroupParser
 {
-    public IEnumerable<IThreadGroup> Parse(Assembly assembly)
+    public IEnumerable<IThreadGroup> Parse(Assembly? assembly)
     {
         return assembly.GetTypes().Where(type => type.IsDefined(typeof(ThreadGroupAttribute)))
             .Select(threadGroupTypes => new Elements.ThreadGroup(threadGroupTypes));

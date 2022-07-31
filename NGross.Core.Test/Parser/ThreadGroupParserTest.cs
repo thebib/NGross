@@ -14,7 +14,7 @@ namespace NGross.Core.Test.Parser;
 [TestFixture]
 public class ProjectParserTest
 {
-    private Assembly _mockAssembly;
+    private Assembly? _mockAssembly;
     
     [SetUp]
     public void LoadMockAssembly()

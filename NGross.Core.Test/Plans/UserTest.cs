@@ -20,12 +20,9 @@ public class UserTest
         var assembly = loader.LoadFromAssembly("mock-assembly.dll");
         var threadGroupsParser = new ThreadGroupParser();
         var groups = threadGroupsParser.Parse(assembly);
+
+        var test = new Plan.Test(groups);
         
-        var user = new User
-        {
-            ThreadGroups = groups
-        };
-        
-        user.RunThreadGroup();
+        test.RunThreadGroups();
     }
 }

@@ -1,5 +1,9 @@
+using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Extensions.Configuration;
 using mock_assembly;
+using Moq;
+using NGross.Core.Context;
 using NGross.Core.Elements;
 using NGross.Core.Engine.Parser;
 using NGross.Core.Engine.Parser.ThreadAction;
@@ -12,20 +16,13 @@ namespace NGross.Core.Test.Parser;
 [TestFixture]
 public class ActionParserTest
 {
-    private ThreadGroup _threadGroup;
-    private ActionParser _parser;
+    private readonly ThreadGroup _threadGroup = new(typeof(MockFixture));
+    private readonly ActionParser _parser = new();
     
-    [SetUp]
-    public void Setup()
-    {
-        this._parser = new ActionParser();
-        this._threadGroup = new ThreadGroup(typeof(MockFixture));
-    }
-
     [Test]
     public void ParseActionSuccessfullyTest()
     {
-        var action = this._parser.Parse(this._threadGroup.InnerTestType);
+        var action = this._parser.Parse(this._threadGroup.InnerTestType, new ThreadGroupContext(new ConfigurationRoot(new List<IConfigurationProvider>())));
         action.ToList().Select(c => c.MethodInfo.Name).FirstOrDefault().ShouldBe("Execute");
     }
 }

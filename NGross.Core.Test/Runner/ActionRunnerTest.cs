@@ -1,5 +1,7 @@
 using System;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
+using NGross.Core.Context;
 using NGross.Core.Runners;
 using NUnit.Framework;
 using Shouldly;
@@ -26,11 +28,29 @@ public class ActionRunnerTest
         result.InternalException.ShouldBeOfType<Exception>();
     }
 
+    [Test]
+    public async Task ThreadGroupContextTest()
+    {
+        ThreadGroupContext context = new ThreadGroupContext(configuration);
+        var runner = new ActionRunner(ThreadGroupContextTask(context));
+        var result = await runner.Run();
+        result.Milliseconds.ShouldBeGreaterThan(0);
+        result.InternalException.ShouldBeNull();
+        
+    }
+
+
+    private IConfiguration configuration;
     private static async Task SampleTask() => await Task.Delay(1);
 
     private static async Task ErrorTask()
     {
         await SampleTask();
         throw new Exception();
+    }
+
+    private static async Task ThreadGroupContextTask(ThreadGroupContext context)
+    {
+        await SampleTask();
     }
 }

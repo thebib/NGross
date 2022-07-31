@@ -11,6 +11,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\mock-assembly\mock-assembly.csproj" />
       <ProjectReference Include="..\NGross.Core\NGross.Core.csproj" />
     </ItemGroup>
 

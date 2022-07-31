@@ -4,5 +4,5 @@ namespace NGross.Core.Engine.Loader;
 
 public interface IAssemblyLoader
 {
-    public Assembly LoadFromAssembly(string assembly);
+    public Assembly? LoadFromAssembly(string assembly);
 }
