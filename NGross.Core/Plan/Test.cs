@@ -8,12 +8,12 @@ namespace NGross.Core.Plan;
 /// </summary>
 public class Test : ITest
 {
-    public Test(IEnumerable<IThreadGroup> threadGroups)
+    public Test(IEnumerable<IThreadGroup>? threadGroups)
     {
         ThreadGroups = threadGroups;
     }
 
-    public IEnumerable<IThreadGroup> ThreadGroups { get; set; }
+    public IEnumerable<IThreadGroup>? ThreadGroups { get; set; }
     
     public void RunThreadGroups()
     {
@@ -34,7 +34,7 @@ public class Test : ITest
 
 public interface ITest
 {
-    public IEnumerable<IThreadGroup> ThreadGroups { get; set; }
+    public IEnumerable<IThreadGroup>? ThreadGroups { get; set; }
 
     void RunThreadGroups();
 }

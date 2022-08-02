@@ -6,5 +6,5 @@ namespace NGross.Core.Engine.Parser.ThreadGroup;
 
 public interface IThreadGroupParser
 {
-    public IEnumerable<IThreadGroup> Parse(Assembly assembly);
+    public IEnumerable<IThreadGroup>? Parse(Assembly assembly);
 }

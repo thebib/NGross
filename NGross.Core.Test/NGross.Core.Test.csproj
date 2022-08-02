@@ -21,4 +21,8 @@
       <ProjectReference Include="..\NGross.Core\NGross.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Builders" />
+    </ItemGroup>
+
 </Project>

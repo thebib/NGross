@@ -3,6 +3,7 @@ using System.Linq;
 using Microsoft.Extensions.Configuration;
 using mock_assembly;
 using Moq;
+using NGross.Core.Config.Reader;
 using NGross.Core.Context;
 using NGross.Core.Elements;
 using NGross.Core.Engine.Parser;
@@ -16,7 +17,7 @@ namespace NGross.Core.Test.Parser;
 [TestFixture]
 public class ActionParserTest
 {
-    private readonly ThreadGroup _threadGroup = new(typeof(MockFixture));
+    private readonly ThreadGroup _threadGroup = new(typeof(MockFixture), "ConfigA");
     private readonly ActionParser _parser = new();
     
     [Test]
