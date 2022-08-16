@@ -22,7 +22,9 @@ public class UserTest
         var groups = threadGroupsParser.Parse(assembly);
 
         var test = new Plan.Test(groups);
-        
-        test.RunThreadGroups();
+        foreach (var testThreadGroup in test.ThreadGroups)
+        {
+            test.RunThreadGroup(testThreadGroup);
+        }
     }
 }

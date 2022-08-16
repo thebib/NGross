@@ -15,13 +15,15 @@ namespace mock_assembly;
 public class MockFixture
 {
     [Action]
-    public async Task Execute(ThreadGroupContext context) {
+    public async Task Execute() {
+        Console.WriteLine("Hello!");
         await Task.FromResult(true);
     }
 
     [Action]
     public async Task FaultExecute()
     {
+        Console.WriteLine("Uh oh Im going to break!");
         await Task.Delay(1);
         throw new Exception();
     }
