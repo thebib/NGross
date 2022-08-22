@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection.Emit;
 using NGross.Core.Elements;
 using NGross.Core.Engine.Loader;
@@ -7,6 +8,7 @@ using NGross.Core.Engine.Parser.ThreadGroup;
 using NGross.Core.Models;
 using NGross.Core.Plan;
 using NUnit.Framework;
+using Shouldly;
 
 namespace NGross.Core.Test.Plans;
 
@@ -22,9 +24,6 @@ public class UserTest
         var groups = threadGroupsParser.Parse(assembly);
 
         var test = new Plan.Test(groups);
-        foreach (var testThreadGroup in test.ThreadGroups)
-        {
-            test.RunThreadGroup(testThreadGroup);
-        }
+        test.ThreadGroups?.ToList().ShouldNotBeEmpty();
     }
 }

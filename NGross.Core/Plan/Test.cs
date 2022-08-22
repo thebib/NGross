@@ -14,19 +14,10 @@ public class Test : ITest
     }
 
     public IEnumerable<IThreadGroup>? ThreadGroups { get; set; }
-
-    public void RunThreadGroup(IThreadGroup threadGroup)
-    {
-        foreach (var i in threadGroup.Actions)
-        {
-            i.MethodInfo.Invoke(threadGroup.ThreadGroupInstance, Array.Empty<object?>());
-        }
-    }
 }
 
 public interface ITest
 {
     public IEnumerable<IThreadGroup>? ThreadGroups { get; set; }
 
-    void RunThreadGroup(IThreadGroup group);
 }

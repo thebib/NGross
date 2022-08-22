@@ -7,6 +7,8 @@ using NGross.Core.Engine.Parser.ThreadAction;
 using NGross.Core.Engine.Parser.ThreadGroup;
 using NGross.Core.Plan;
 using System.CommandLine;
+using NGross.Core.Calculators;
+using NGross.Core.Logging;
 using NGross.Core.Manager;
 
 var cmd = new RootCommand();
@@ -31,6 +33,9 @@ startCommand.SetHandler((pathValue) =>
         new ActionParser());
     var test = builder.Build();
     Console.WriteLine("Tests Loaded");
+
+    TestExecutionManager manager = new TestExecutionManager(new NGrossLogger(), test, new PacingCalculator());
+    manager.Execute();
     Console.ForegroundColor = ConsoleColor.White;
 
 }, path);
