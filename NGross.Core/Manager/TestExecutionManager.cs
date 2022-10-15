@@ -12,12 +12,13 @@ public class TestExecutionManager : ITestExecutionManager
     public IPacingCalculator Calculator;
     private Dictionary<IThreadGroup, IConfigurationSection> threadGroupDict;
     private List<Task> ThreadGroupThreads;
+    private INGrossLogger logger;
     public TestExecutionManager(INGrossLogger logger, ITest test, IPacingCalculator calculator)
     {
         ThreadGroupThreads = new List<Task>();
         threadGroupDict =
             new Dictionary<IThreadGroup, IConfigurationSection>();
-        logger.Log("Test Manager has started");
+        logger = new NGrossLogger();
         this.Test = test;
         foreach (var testThreadGroup in this.Test.ThreadGroups!)
         {
@@ -53,7 +54,6 @@ public class TestExecutionManager : ITestExecutionManager
                 threadGroupCount++;
             }
         }
-        Console.Write("Tasks created - Time for the magic to happen");
         Task.WaitAll(ThreadGroupThreads.ToArray());
     }
     private int GetThreadCount(KeyValuePair<IThreadGroup, IConfigurationSection> testThreadGroup)
@@ -63,7 +63,6 @@ public class TestExecutionManager : ITestExecutionManager
 
     private void RunThreadGroup(IThreadGroup threadGroup, PacingStats pacingController)
     {
-        Console.WriteLine($"Sleeping for {pacingController.Before}");
         Thread.Sleep(pacingController.Before);
         foreach (var i in threadGroup.Actions)
         {

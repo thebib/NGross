@@ -20,12 +20,12 @@ public class MockFixture
         await Task.FromResult(true);
     }
 
-    // [Action]
-    // public async Task FaultExecute()
-    // {
-    //     Console.WriteLine("Uh oh Im going to break!");
-    //     await Task.Delay(1);
-    //     throw new Exception();
-    // }
+    [Action]
+    public async Task FaultExecute()
+    {
+        Console.WriteLine("Uh oh Im going to break!");
+        await Task.Delay(1);
+        throw new Exception();
+    }
 }
 
