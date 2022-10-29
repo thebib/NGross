@@ -1,4 +1,5 @@
-﻿using BoDi;
+﻿using System.Reflection.Metadata;
+using BoDi;
 using NGross.Core.Attributes.TestAttributes;
 using NGross.Core.Context;
 
@@ -24,7 +25,8 @@ public class MockFixture
     public async Task FaultExecute()
     {
         Console.WriteLine("Uh oh Im going to break!");
-        await Task.Delay(1);
+        Console.WriteLine("Hello World!");
+        await Task.Delay(1000);
         throw new Exception();
     }
 }

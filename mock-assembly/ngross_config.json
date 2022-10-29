@@ -1,9 +1,9 @@
 {
     "ThreadGroupConfig": {
         "ConfigA": {
-            "Users": 50,
-            "Ramp-up": 20,
-            "Loop": 15,
+            "Users": 1,
+            "Ramp-up": 1,
+            "Loop": 0,
             "ErrorBehaviour": "Continue"
         }
     },

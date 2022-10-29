@@ -7,6 +7,7 @@ using NGross.Core.Engine.Parser.ThreadAction;
 using NGross.Core.Engine.Parser.ThreadGroup;
 using NGross.Core.Plan;
 using System.CommandLine;
+using mock_assembly;
 using NGross.Core.Calculators;
 using NGross.Core.Logging;
 using NGross.Core.Manager;
@@ -22,7 +23,7 @@ Console.ForegroundColor = ConsoleColor.Green;
 
 cmd.AddCommand(startCommand);
 
-startCommand.SetHandler((pathValue) =>
+startCommand.SetHandler(async (pathValue) =>
 {
     Console.ForegroundColor = ConsoleColor.DarkBlue;
     Console.WriteLine($"Starting new test run on {pathValue}");
@@ -35,9 +36,9 @@ startCommand.SetHandler((pathValue) =>
     Console.WriteLine("Tests Loaded");
 
     TestExecutionManager manager = new TestExecutionManager(new NGrossLogger(), test, new PacingCalculator());
-    manager.Execute();
+    await manager.Execute();
     Console.ForegroundColor = ConsoleColor.White;
 
 }, path);
 
-cmd.InvokeAsync(args);
+await cmd.InvokeAsync(args);

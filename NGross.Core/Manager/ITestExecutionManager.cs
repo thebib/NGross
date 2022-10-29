@@ -4,6 +4,6 @@ namespace NGross.Core.Manager;
 
 public interface ITestExecutionManager
 {
-    void Execute();
+    Task Execute();
     void Stop();
 }
